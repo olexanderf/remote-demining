@@ -1,0 +1,66 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--card-list-gap-mobile);
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    gap: var(--card-list-gap);
+  }
+
+  @media (min-width: 1280px) {
+    padding-top: 20px;
+    flex-direction: row;
+    gap: var(--card-list-gap-desktop);
+  }
+}
+
+.card {
+  overflow: hidden;
+  background-color: var(--bg-white-color);
+  border-radius: var(--card-border-rad);
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    display: flex;
+  }
+}
+
+.image {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: var(--card-img-height-mobile);
+
+  @media (min-width: 678px) {
+    height: var(--card-img-height);
+  }
+
+  @media (min-width: 768px) {
+    width: 50%;
+    margin-right: 24px;
+  }
+
+  @media (min-width: 1280px) {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.body {
+  padding: 24px;
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    padding: var(--card-list-padding-tablet);
+  }
+}
+
+.title {
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  color: var(--section-title-color);
+}
+
+.text {
+  color: var(--section-title-color);
+}

@@ -1,0 +1,29 @@
+.card {
+  border-radius: var(--card-border-rad);
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: var(--card-img-height);
+  @media screen and (max-width: 400px) {
+    height: var(--card-img-height-mobile);
+  }
+}
+
+.body {
+  padding: 24px;
+  background-color: var(--bg-white-color);
+  @media screen and (max-width: 400px) {
+    padding: 16px;
+  }
+}
+
+.primary {
+  background-color: var(--bg-primary-color);
+}
+
+.light-blue {
+  background-color: var(--bg-light-blue);
+}
