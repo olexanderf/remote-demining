@@ -12,6 +12,7 @@ import Modal from "@/components/Modal/Modal";
 import PasswordInputToggle from "@/components/PasswordInputToggle/PasswordInputToggle";
 
 import styles from "./PasswordReset.module.css";
+import { useRouter } from "next/navigation";
 
 interface PasswordResetProps {
   id: string;
